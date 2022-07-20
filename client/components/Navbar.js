@@ -29,37 +29,44 @@ const Navbar = () => {
           </a>
         </span>
         <nav>
-          <a href="#auth" data-scroll-to>
-            Components
-          </a>
-
-          <a href="#getstarted" data-scroll-to>
-            Text and Images
-          </a>
-
           <div>
-            <a href="#auth">
-              <button type="button">Sign Up</button>
+            <a href="#getstarted" data-scroll-to>
+              About
+            </a>
+            <a href="#auth" data-scroll-to>
+              Sign Up
+            </a>
+          </div>
+          <div>
+            <a href="#auth" data-scroll-to>
+              <button type="button" className="ml-1">
+                Sign Up
+              </button>
             </a>
 
-            <button type="button">Login</button>
+            <button type="button" className="ml-1">
+              Login
+            </button>
           </div>
         </nav>
         <div className="toggle" onClick={clickHandler}></div>
       </div>
-      <div className={menu}>
-        <ul>
+      <div className={menu} data-scroll-section>
+        <ul data-scroll>
           <li onClick={closeHandler}>
-            <a href="#auth">Components</a>
+            <a href="#getstarted" data-scroll-to>
+              About
+            </a>
           </li>
           <li onClick={closeHandler}>
-            <a href="#getstarted">Text and Images</a>
+            <a href="#auth" data-scroll-to>
+              Sign Up
+            </a>
           </li>
           <li onClick={closeHandler}>
-            <a href="#auth">Sign Up</a>
-          </li>
-          <li onClick={closeHandler}>
-            <a href="#">Login</a>
+            <a href="#" data-scroll-to>
+              Login
+            </a>
           </li>
         </ul>
       </div>
